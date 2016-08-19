@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+  <link data-require="bootstrap-css@*" data-semver="3.2.0" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body ng-controller="TemperatureController">
+  <div class="page-header">
+    <h1 class="text-center">Temperature Monitor</h1>
+  </div>
+  
+  <form name="temperatureMonitorForm">
+    <div class="form-group">
+      <label for="temperature">Add temperature:</label>
+      <input type="text" name="temperature" id="temperature" class="form-control" ng-model="temperature" ng-pattern="temperaturePattern" />
+    </div>
+    <div class="alert alert-danger" ng-show="temperatureMonitorForm.temperature.$error.pattern">Temperature entered is Invalid</div>
+    <button ng-click="addTemperature(temperature)" class="btn btn-primary">Add</button>
+  </form>
+  <p class="alert margin-top" ng-show="temperaturesArray">Temperatures: <strong>{{temperaturesArray}}</strong></p>
+  
+  <hr />
+  
+  <section>
+    <button class="btn btn-primary" ng-click="getMedianTemperature()">Get Median Temperture</button>
+    <div ng-show ="currentMedian" class="alert alert-success margin-top">
+      <p>Current Median: <strong>{{currentMedian}}</strong></p>
+    </div>
+    <!-- display current media here-->
+  </section>
+  <hr />
+  <hr />
+  <p><em>Developer Name: --Lakshmi Kiran Namala--</em></p>
+
+  <hr />
+  
+  <a href="jasmine-test-runner.html" class="btn btn-danger">Run Unit Tests</a>
+  
+  <script data-require="angular.js@*" data-semver="1.3.5" src="https://code.angularjs.org/1.3.5/angular.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
