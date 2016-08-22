@@ -2,7 +2,7 @@
 
 ## Guidelines 
 
-Using this plunker project as seed, Build a Temperature Monitor Single Page Application (SPA) using Angular and test your the aplication code using Jasmine.
+ Build a Temperature Monitor Single Page Application (SPA) using Angular and test your the aplication code using Jasmine.
 
 **User Story #1**
 As an anonymous end user, I want to be able to enter any number of temperture records by entering a value and then clicking on the "Add" button.
