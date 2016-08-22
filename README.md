@@ -1,4 +1,4 @@
-#CODING EXERCISE - JavaScript/SPA
+#Temperature Monitor -  JavaScript/SPA
 
 ## Guidelines 
 
