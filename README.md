@@ -2,7 +2,7 @@
 
 ## Guidelines 
 
- Build a Temperature Monitor Single Page Application (SPA) using Angular and test your the aplication code using Jasmine.
+ Build a Temperature Monitor Single Page Application (SPA) using Angular.
 
 **User Story #1**
 As an anonymous end user, I want to be able to enter any number of temperture records by entering a value and then clicking on the "Add" button.
@@ -24,9 +24,5 @@ The UI should inform me that I tried an invalid action.
 - The Code that calculates the median MUST be your own (no libraries allowed)
 - The Code that calculates the median MUST be covered by Unit Tests (As much as you feel necessary to ensure good code quality)
 - Twitter Bootstrap CSS is already included in the index file, use it at will
-
-Jasmine documentation can be found at http://jasmine.github.io/2.0/introduction.html
-
-You can find a definition of what is a Median at http://en.wikipedia.org/wiki/Median
 
 
